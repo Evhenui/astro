@@ -1,0 +1,20 @@
+---
+const { title } = Astro.props
+---
+
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">Головна</a>
+      <a href="/about">Про нас</a>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>© 2026</footer>
+  </body>
+</html>
